@@ -2,13 +2,10 @@ import React from 'react';
 import './App.css';
 class App extends React.Component{
 
-  constructor(){
-    super();
-    this.state = {
+  //we can declare another way the state without constructor
+    state = {
         counter : 0
-
     }
-  }
 
   addToCounter = () => {
     this.setState( (prevStatate,prevProps)=>{
